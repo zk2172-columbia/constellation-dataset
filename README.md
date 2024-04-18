@@ -60,7 +60,7 @@ All models can also be downloaded from the following links:
 
 ## Training and Inference
 
-We provide the training script, including the set of augmentations with all parameters, under training/. The script trains all models in the paper.
+We provide the training script, including the set of augmentations with all parameters, under training/.
 
 #### Dataset Configuration
 
