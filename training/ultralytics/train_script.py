@@ -4,7 +4,7 @@ import wandb
 
 MODE = 'no_aug'
 BATCH_SIZE = 32
-PROJECT_DIR = '/mnt/nfs/'
+PROJECT_DIR = '/mnt/nfs/' # Set the project directory
 DEVICE = 'cuda:0'
 
 if MODE == 'no_aug':

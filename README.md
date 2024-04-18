@@ -54,11 +54,13 @@ We provide a number of pretrained models for PyTorch and TensorRT.
 
 ### Model Directories
 
-All models can also be downloaded from the following links:
+All models can also be downloaded from the following links as a .zip file:
 
-**PyTorch Model Directory:** https://drive.google.com/drive/folders/11k-EDDusIvvQB0Ss46c-_7GX3jvjWw4B?usp=sharing
+**PyTorch Model Directory:** https://drive.google.com/drive/folders/1RLHkXApuIHzqgoH8CTOtXNt5yfp81sWn
 
 ## Training and Inference
+
+### YOLOv8/DETR Models
 
 We provide the training script, including the set of augmentations with all parameters, under training/.
 
@@ -68,11 +70,15 @@ See configs/constellation.yaml and set it to your dataset download path.
 
 #### Training
 
-See training/train_script.py. The script trains all models in the paper sequentially.
+See training/ultralytics/train_script.py. The script trains all models in the paper sequentially.
 
 #### Evaluation
 
-See evaluation/evaluation.py.
+See evaluation/ultralytics/evaluation.py.
+
+### CFINet
+
+Please follow the instructions under training/cfinet for training and evaluation.
 
 ## Reference
 ```bibtex
