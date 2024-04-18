@@ -58,8 +58,6 @@ All models can also be downloaded from the following links:
 
 **PyTorch Model Directory:** https://drive.google.com/drive/folders/11k-EDDusIvvQB0Ss46c-_7GX3jvjWw4B?usp=sharing
 
-**TensorRT Model Directory:** https://drive.google.com/drive/folders/11k-EDDusIvvQB0Ss46c-_7GX3jvjWw4B?usp=sharing
-
 ## Training and Inference
 
 We provide the training script, including the set of augmentations with all parameters, under training/. The script trains all models in the paper.
