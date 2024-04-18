@@ -4,7 +4,8 @@
 "Small Object Detection via Coarse-to-fine Proposal Generation and Imitation Learning", [ICCV 2023](https://openaccess.thecvf.com/content/ICCV2023/html/Yuan_Small_Object_Detection_via_Coarse-to-fine_Proposal_Generation_and_Imitation_Learning_ICCV_2023_paper.html).
 
 ## Instructions
-CFINet uses MMCV/MMDetection for training/evaluation of models. The dataset used for training/evaluation must first be converted to COCO format. We then need to set-up the dependencies:
+CFINet uses MMCV/MMDetection for training/evaluation of models. The dataset used for training/evaluation must first be converted to COCO format. This can be done using a tool such as [pylabel](https://github.com/pylabel-project/pylabel).
+
 1. Create a virtual environment and install the following dependencies
     - Python 3.8
     ```
