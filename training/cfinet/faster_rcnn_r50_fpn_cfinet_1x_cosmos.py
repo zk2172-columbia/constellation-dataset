@@ -153,7 +153,7 @@ runner = dict(
     max_epochs=125)
 evaluation = dict(interval=1, classwise=True, metric='bbox')
 checkpoint_config = dict(  # Config to set the checkpoint hook, Refer to https://github.com/open-mmlab/mmcv/blob/master/mmcv/runner/hooks/checkpoint.py for implementation.
-    interval=5, out_dir='cfinet_nopretrain_cosmos_80_weights')
+    interval=5, out_dir='cfinet_nopretrain_constellation_weights')
 log_config = dict(
     interval=50,
     hooks=[
@@ -201,21 +201,21 @@ data = dict(
     workers_per_gpu=2,  # Worker to pre-fetch data for each single GPU
     train=dict(
         type=dataset_type,
-        img_prefix='/home/sanjeevnara/traffic/cvpr_training_test_split_coco/images/train',
+        img_prefix='/constellation/images/train',
         classes=classes,
-        ann_file='/home/sanjeevnara/traffic/cvpr_training_test_split_coco/train_coco.json',
+        ann_file='/constellation/train_coco.json',
         pipeline=train_pipeline),
     val=dict(
         type=dataset_type,
-        img_prefix='/home/sanjeevnara/traffic/cvpr_training_test_split_coco/images/val',
+        img_prefix='/constellation/images/val',
         classes=classes,
-        ann_file='/home/sanjeevnara/traffic/cvpr_training_test_split_coco/val_coco.json',
+        ann_file='/constellation/val_coco.json',
         pipeline=test_pipeline),
     test=dict(
         type=dataset_type,
-        img_prefix='/home/sanjeevnara/traffic/cvpr_training_test_split_coco/images/val',
+        img_prefix='/constellation/images/val',
         classes=classes,
-        ann_file='/home/sanjeevnara/traffic/cvpr_training_test_split_coco/val_coco.json',
+        ann_file='/constellation/val_coco.json',
         pipeline=test_pipeline))
-# We can use the pre-trained Mask RCNN model to obtain higher performance
+# We can use a pre-trained Mask RCNN model. (Refer to official CFINet repo for weights)
 #load_from = 'checkpoints/mask_rcnn_r50_caffe_fpn_mstrain-poly_3x_coco_bbox_mAP-0.408__segm_mAP-0.37_20200504_163245-42aa3d00.pth'
