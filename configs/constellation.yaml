@@ -1,0 +1,8 @@
+path: F:\constellation_v2
+train: .\images\train
+val:  .\images\val
+test:  .\images\val
+
+nc: 2
+
+names: ['vehicle', 'pedestrian']
