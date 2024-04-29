@@ -2,9 +2,9 @@
 
 <img width="100%" src="https://keremturkcan.com/projects/constellation/constellation_a2.png" alt="Constellation dataset banner">
 
-**Paper:** :soon:
+**Paper:** [arXiv](https://arxiv.org/abs/2404.16944)
 
-**Website:** :soon:
+**Website:** [Constellation Dataset](https://mkturkcan.github.io/constellation-web/)
 
 ## Abstract
 
