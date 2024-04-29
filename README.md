@@ -12,8 +12,8 @@ We introduce Constellation, a dataset of 13K images suitable for research on hig
 
 ## Updates
 
-* :soon: Additional dataset download links
-* :soon: Release of models trained on different datasets
+* :white_check_mark: Additional dataset download links
+* :white_check_mark: Release of models trained on different datasets
 * :white_check_mark: Release of pretrained models
 
 ## Setup
