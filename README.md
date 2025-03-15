@@ -8,7 +8,7 @@
 
 ## Abstract
 
-We introduce Constellation, a dataset of 13K images suitable for research on high-altitude object detection of objects in dense urban streetscapes observed from high-elevation cameras, collected for a variety of temporal conditions. The dataset addresses the need for curated data to explore problems in small object detection exemplified by the limited pixel footprint of pedestrians observed tens of meters from above. It enables the testing of object detection models for variations in lighting, building shadows, weather, and scene dynamics. We evaluate contemporary object detection architectures on the dataset, observing that state-of-the-art methods have lower performance in detecting small pedestrians compared to vehicles, corresponding to a 10% difference in average precision (AP). Using structurally similar datasets for pretraining the models results in an increase of 1.8% mean AP (mAP). We further find that incorporating domain-specific data augmentations helps improve model performance. Using pseudo-labeled data, obtained from inference outcomes of the best-performing models, improves the performance of the models. Finally, comparing the models trained using the data collected in two different time intervals, we find a performance drift in models due to the changes in intersection conditions over time. The best-performing model achieves a pedestrian AP of 92.0% with 11.5 ms inference time on NVIDIA A100 GPUs, and an mAP of 95.4%. 
+As smart cities evolve, privacy-preserving edge processing at traffic intersections has become essential for real-time safety applications while reducing data transmission and centralized computation. High-altitude cameras with on-device inference provide an optimal solution that respects privacy while delivering low-latency results. We introduce Constellation, a dataset of 13K images for research on object detection in dense urban streetscapes from high-elevation cameras across varied temporal conditions. The dataset addresses challenges in small object detection, particularly for pedestrians observed from elevated positions with limited pixel footprints. Our evaluation of contemporary object detection architectures reveals a 10% lower average precision (AP) for small pedestrians compared to vehicles. Pretraining models on structurally similar datasets increases mean AP by 1.8%. Domain-specific data augmentations and pseudo-labeled data from top-performing models further enhance performance. We evaluate deployment viability on resource-constrained edge devices including Jetson Orin, Raspberry Pi 5, and mobile platforms, demonstrating feasibility of privacy-preserving on-device processing. Comparing models trained on data collected across different time intervals reveals performance drift due to changing intersection conditions. The best-performing model achieves 92.0% pedestrian AP with 7.08 ms inference time on A100 machines, and 95.4% mAP. The best-performing edge model achieves a similar performance, with Jetson Orin Nano achieving 94.5% mAP and 27.5ms inference time using TensorRT.
 
 ## Updates
 
@@ -32,9 +32,9 @@ Dataset config files are presented in configs/ folder.
 
 Constellation dataset is available in the YOLO format from the links below:
 
-**Google Drive:** https://drive.google.com/drive/folders/11k-EDDusIvvQB0Ss46c-_7GX3jvjWw4B?usp=sharing
+[**Google Drive**](https://drive.google.com/drive/folders/11k-EDDusIvvQB0Ss46c-_7GX3jvjWw4B?usp=sharing)
 
-**COSMOS:** :soon:
+[**HuggingFace**](https://huggingface.co/datasets/mehmetkeremturkcan/constellation_urban_intersection_dataset)
 
 ## Model Zoo
 
@@ -82,11 +82,13 @@ Please follow the instructions under training/cfinet for training and evaluation
 
 ## Reference
 ```bibtex
-@inproceedings{Turkcan2024Constellation,
-  author = {Turkcan, Mehmet Kerem and Zang, Chengbo and Narasimhan, Sanjeev and Je, Gyung Hyun and Yu, Bo and Ghasemi, Mahshid and Zussman, Gil and Ghaderi, Javad and Kostic, Zoran},
-  title = {Constellation: Benchmarking High-Altitude Object Detection for an Urban Intersection},
-  booktitle = {In Preparation},
-  year = {2024},
-  note = {In Preparation},
+@misc{turkcan2024constellationdatasetbenchmarkinghighaltitude,
+      title={Constellation Dataset: Benchmarking High-Altitude Object Detection for an Urban Intersection}, 
+      author={Mehmet Kerem Turkcan and Sanjeev Narasimhan and Chengbo Zang and Gyung Hyun Je and Bo Yu and Mahshid Ghasemi and Javad Ghaderi and Gil Zussman and Zoran Kostic},
+      year={2024},
+      eprint={2404.16944},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2404.16944}, 
 }
 ```
