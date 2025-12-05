@@ -1,4 +1,12 @@
-# :stars: Constellation Dataset: Benchmarking High-Altitude Object Detection for an Urban Intersection
+<p align="center">
+  <img src="https://github.com/mkturkcan/constellation-benchmarks/blob/main/assets/constellation_logo180.png?raw=true"  width="180" />
+</p>
+<h1 align="center">
+  <p>Constellation Dataset: Benchmarking High-Altitude Object Detection for an Urban Intersection</p>
+</h1>
+<h3 align="center">
+  <p></p>
+</h3>
 
 <img width="100%" src="https://keremturkcan.com/projects/constellation/constellation_a2.png" alt="Constellation dataset banner">
 
