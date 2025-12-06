@@ -14,6 +14,8 @@
 
 **Website:** [Constellation Dataset](https://mkturkcan.github.io/constellation-web/)
 
+**Dataset:** [HuggingFace](https://huggingface.co/datasets/mehmetkeremturkcan/constellation_urban_intersection_dataset)
+
 ## Abstract
 
 As smart cities evolve, privacy-preserving edge processing at traffic intersections has become essential for real-time safety applications while reducing data transmission and centralized computation. High-altitude cameras with on-device inference provide an optimal solution that respects privacy while delivering low-latency results. We introduce Constellation, a dataset of 13K images for research on object detection in dense urban streetscapes from high-elevation cameras across varied temporal conditions. The dataset addresses challenges in small object detection, particularly for pedestrians observed from elevated positions with limited pixel footprints. Our evaluation of contemporary object detection architectures reveals a 10% lower average precision (AP) for small pedestrians compared to vehicles. Pretraining models on structurally similar datasets increases mean AP by 1.8%. Domain-specific data augmentations and pseudo-labeled data from top-performing models further enhance performance. We evaluate deployment viability on resource-constrained edge devices including Jetson Orin, Raspberry Pi 5, and mobile platforms, demonstrating feasibility of privacy-preserving on-device processing. Comparing models trained on data collected across different time intervals reveals performance drift due to changing intersection conditions. The best-performing model achieves 92.0% pedestrian AP with 7.08 ms inference time on A100 machines, and 95.4% mAP. The best-performing edge model achieves a similar performance, with Jetson Orin Nano achieving 94.5% mAP and 27.5ms inference time using TensorRT.
@@ -40,9 +42,9 @@ Dataset config files are presented in configs/ folder.
 
 Constellation dataset is available in the YOLO format from the links below:
 
-[**Google Drive**](https://drive.google.com/drive/folders/11k-EDDusIvvQB0Ss46c-_7GX3jvjWw4B?usp=sharing)
-
 [**HuggingFace**](https://huggingface.co/datasets/mehmetkeremturkcan/constellation_urban_intersection_dataset)
+
+[**Google Drive (Subset of the Data)**](https://drive.google.com/drive/folders/11k-EDDusIvvQB0Ss46c-_7GX3jvjWw4B?usp=sharing)
 
 ## Model Zoo
 
