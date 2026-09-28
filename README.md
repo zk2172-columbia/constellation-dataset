@@ -90,15 +90,20 @@ See evaluation/ultralytics/evaluation.py.
 
 Please follow the instructions under training/cfinet for training and evaluation.
 
+## Acknowledgement
+
+This data was collected at the [PAWR](https://advancedwireless.org/) [COSMOS testbed](https://www.cosmos-lab.org/) at [Columbia University](https://www.columbia.edu/).
+
 ## Reference
 ```bibtex
-@misc{turkcan2024constellationdatasetbenchmarkinghighaltitude,
-      title={Constellation Dataset: Benchmarking High-Altitude Object Detection for an Urban Intersection}, 
-      author={Mehmet Kerem Turkcan and Sanjeev Narasimhan and Chengbo Zang and Gyung Hyun Je and Bo Yu and Mahshid Ghasemi and Javad Ghaderi and Gil Zussman and Zoran Kostic},
-      year={2024},
-      eprint={2404.16944},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2404.16944}, 
+@article{turkcan2026constellation,
+  title={Constellation dataset: Benchmarking high-altitude object detection for an urban intersection},
+  author={Turkcan, Mehmet Kerem and Zang, Chengbo and Narasimhan, Sanjeev and Je, Gyung Hyun and Yu, Bo and Ghasemi, Mahshid and Ghaderi, Javad and Zussman, Gil and Kostic, Zoran},
+  journal={International Journal of Computer Vision},
+  volume={134},
+  number={10},
+  pages={429},
+  year={2026},
+  publisher={Springer}
 }
 ```
